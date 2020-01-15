@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Campus Ambassador | Revels'20</title>
+    <link rel="stylesheet" src="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Join us as a Campus Ambassador for Revels'20!">
+    <meta name="keywords" content="Revels, Revels'20, Mjbub, Quinaat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./Revels2020_Logo expand 3_DarkBG.svg" id="logo">
+        <h1>Campus Ambassador Program </h1>
+    </div>
+    <div class="content">
+        <h4>Overview</h4>
+        <div class="dets">
+        	Revels is back this year and needs young and outgoing minds to generate our presence at colleges throughout the country. The REVELS’20 Campus Ambassador Program kicks off soon and will reward winners with a truly memorable experience.<br><br>
+        	The program will open doors to new opportunities and transform participants into confident and fearless individuals. Enroll with us today and represent your college on our national network.
+        </div>
+        <h4>Tasks and program structure</h4>
+        <div class="dets">
+        	Participants will be tasked with sharing posters and posts on various social media platforms. They will be allotted points accordingly based on their reach and turnover. The program will run from February 1st to March 1st, 2020.
+        </div>
+        <h4>Incentives</h4>
+        <div class="dets">
+        	<div class="incents"><img src="./dollar.svg"> Cash Prizes of up to INR 10000</div>
+        	<div class="incents"><img src="./shop.svg">Fest Merchandise and goodies<br></div>
+        	<div class="incents"><img src="./ticket.svg">Proshow Tickets <br></div>
+        	<div class="incents"><img src="./postcard.svg">Social Media Marketing Internship Letter</div>
+        	<div class="incents"><img src="./coupon.svg">Vouchers and Coupons</div>
+		</div>
+	</div>
+    <div id="form">
+        <h3 id="regis">Registration</h3>
+        <input type="text" name="name" placeholder="NAME" required>
+        <input type="email" name="email" placeholder="EMAIL" required>
+        <input type="tel" name="tel" placeholder="PHONE NUMBER" required maxlength="15" minlength="10">
+        <input type="text" name="College" placeholder="COLLEGE NAME" required>
+        <select name="year-study" onchange="colorChange(this)">
+                <option value="" disabled selected> <span>YEAR OF STUDY</span> </option>
+                <option value="first">FIRST</option>
+                <option value="second">SECOND</option>
+                <option value="third">THIRD</option>
+                <option value="fourth">FOURTH</option>
+              </select>
+        <input type="textbox" name="about" placeholder="ABOUT YOURSELF" required minlength="1">
+        <button id="submit">SUBMIT</button>
+    </div>
+    <footer>
+        Developed By System Admin and Web Dev
+    </footer>
+</body>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LexFM4UAAAAABAWToB3upLdOYqAklxt9PiLv_b0">
+</script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LexFM4UAAAAABAWToB3upLdOYqAklxt9PiLv_b0', {
+            action: 'homepage'
+        }).then(function(token) {
+
+        });
+    });
+</script>
+<script type="text/javascript" src="scripts.js"></script>
+
+
+</html>

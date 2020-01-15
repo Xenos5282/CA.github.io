@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,600,700&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 8vh;
+}
+#logo {
+    width: 35vw;
+    height: 35vw;
+    margin:auto;
+    margin-right: 0;
+    padding: 5%;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*background: -moz-linear-gradient(top, #9DBF9E 0%, #2F243A 100%);*/
+    /*background: -webkit-linear-gradient(top, #922D50 0%, #592941 100%);*/
+    background: #922D50;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    justify-content: flex-end;
+}
+
+h1 {
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    color: #F0F7F4;
+    padding-top: 10px;
+}
+
+h3 {
+    font-size: 2.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.8em;
+    margin: 0.8em 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.content {
+    font-size: 0.8em;
+    /*color: #EADEDA;*/
+    color: white;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dets {
+    text-align: justify;
+}
+
+.incents {
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    text-align: left;
+}
+
+.incents > img {
+    padding-right: 15px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#regis {
+    font-weight: 700;
+    color: tomato;
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+input,
+select {
+    border-radius: 20px;
+    border: 2px solid tomato;
+    padding-right: 95px;
+    padding-left: 8px;
+    padding-top: 11.3px;
+    padding-bottom: 11.3px;
+    color: white;
+    background-color: transparent;
+    opacity: 75%;
+    margin-top: 12.5px;
+    font-size: .8em;
+    height: 3.5em;
+    width: 100%;
+    font-weight: 500;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: rgba(255,99,71,0.6);
+    font-weight: 500;
+}
+
+.changed{
+    color: white;
+}
+
+ ::placeholder {
+    color: tomato;
+    padding-left: 4px;
+    font-weight: 500;
+}
+
+input[name="about"] {
+    padding-bottom: 100px;
+    padding-top: 25px;
+}
+
+#submit {
+    margin-top: 20px;
+    background-color: tomato;
+    border: 2px solid tomato;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 30%;
+    color: white;
+}
+
+footer {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+
+
+@media only screen and (min-width: 441px) {
+    .header {
+        justify-content: flex-start;
+        display: flex;
+    }
+    #logo {
+        margin: 0;
+    }
+    h1 {
+        font-size: 2.8em;
+        /*margin: auto;*/
+        padding-left: 0px;
+    }
+    .content {
+        width: 70vw;
+        font-size: 1.3em;
+    }
+    input,
+    select {
+        font-size: 1.4em;
+    }
+    
+    #form {
+        width: 55vw;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .header {
+        justify-content: center;
+        display: flex;
+    }
+    h1 {
+        font-size: 3.5em;
+        /*margin-left: 0;*/
+        padding-left: 0px;
+    }
+    img {
+        height: 10vh;
+    }
+    #logo {
+        height: 20vw;
+        width: 20vw;
+        padding: 5%;
+    }
+    .content {
+        width: 70vw;
+        font-size: 1.3em;
+    }
+    #form {
+        width: 40%;
+    }
+    input,
+    select {
+        font-size: 1.4em;
+    }
+   
+    .dets {
+        margin-left: 2em;
+    }
+    .incents > img {
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .grecaptcha-badge{
+        visibility: collapse;
+    }
+} 
